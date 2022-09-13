@@ -116,6 +116,7 @@ body {
   font-size: 64px;
   line-height: 70px;
   color: #FFFFFF;
+  max-width: 792px;
 }
 
 .catalog_title {
@@ -224,11 +225,13 @@ body {
   margin-top: 32px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 56px;
 }
 
 .product {
-  width: 379px;
+  width: 378px;
 }
 
 .product_img {
@@ -734,4 +737,25 @@ body {
 .cart_form-button:hover {
   background: #000000;
   color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .furniture_item {
+    height: 268px;
+  }
+  .product_content {
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 39px;
+  }
+}
+@media (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -102,6 +102,7 @@ body {
     font-size: 64px;
     line-height: 70px;
     color: $textColor;
+    max-width: 792px;
 }
 
 .catalog_title {
@@ -215,11 +216,13 @@ body {
     margin-top: 32px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
+    column-gap: 32px;
+    row-gap: 56px;
 }
 
 .product {
-    width: 379px;
+    width: 378px;
 }
 
 .product_img {
@@ -489,3 +492,4 @@ body {
 /*конец блока каталога */
 
 @import 'cart';
+@import 'tablet';
