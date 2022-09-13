@@ -14,11 +14,40 @@
         column-gap: 29px;
         row-gap: 39px;
     }
+
+    .footer {
+        &_logo {
+            display: none;
+        }
+    }
+
+    .catalog_content {
+        row-gap: 30px;
+    }
+
+    .cart {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 64px;
+
+        &_form {
+            width: 376px;
+        }
+    }
 }
 
-@media (max-width: 833px) {
+@media (min-width: 768px) and (max-width: 833px) {
     .center {
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    .product {
+        width: 345px;
+    }
+
+    .cart_content {
+        width: 728px;
+    }
+
 }

@@ -27,6 +27,13 @@
         grid-column: span 8;
     }
 
+    &_product {
+        display: flex;
+        gap: 32px;
+        flex-flow: column wrap;
+        margin-bottom: 50px;
+    }
+
     &_name-box {
         padding-bottom: 14px;
         font-style: normal;
@@ -34,9 +41,10 @@
         font-size: 16px;
         line-height: 20px;
         color: $baseColor;
-        display: grid;
-        grid-template-columns: 725px 61px;
+        display: flex;
+        padding-right: 28px;
         box-sizing: border-box;
+        justify-content: space-between;
     }
 
     &_item {
@@ -44,7 +52,6 @@
         display: flex;
         justify-content: space-between;
         padding-top: 25px;
-        padding-bottom: 32px;
     }
 
     &_left {
@@ -170,6 +177,7 @@
         background: #F7F6F6;
         border-radius: 20px;
         height: 556px;
+        width: 379px;
         padding-top: 42px;
         padding-bottom: 148px;
         box-sizing: border-box;
