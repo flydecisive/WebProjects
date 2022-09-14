@@ -21,6 +21,52 @@ body {
 
     &_content {
         padding-top: 40px;
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            align-items: flex-end;
+        }
+
+        &-img {
+            margin-top: 50px;
+        }
+    }
+
+    &_title {
+        font-size: 48px;
+        line-height: 59px;
+        color: $baseColor;
+    }
+
+    &_text {
+        font-family: $textMedium;
+        font-size: 18px;
+        line-height: 22px;
+        color: $baseColor;
+    }
+
+    &_lang {
+        transform-origin: 100% 100%;
+        transform: rotate(-90deg) translateX(100%);
+
+        &-item {
+            font-size: 16px;
+            line-height: 20px;
+            color: $secondColor;
+            text-decoration: none;
+
+            &:not(:last-child)::after {
+                content: ' | ';
+                color: $secondColor;
+            }
+
+            &:hover {
+                color: $baseColor;
+            }
+        }
+
     }
 }
 
@@ -49,5 +95,77 @@ body {
         &:hover {
             color: $baseColor;
         }
+    }
+}
+
+.heading {
+    font-size: 34px;
+    line-height: 42px;
+    color: $baseColor;
+}
+
+.about {
+    background-color: $bgColor;
+    padding-top: 120px;
+    padding-bottom: 107px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    gap: 24px;
+
+    &_content {
+        display: flex;
+        flex-flow: column wrap;
+        width: 485px;
+        gap: 36px;
+    }
+
+    &_item {
+        font-family: $textMedium;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+        color: $baseColor;
+    }
+}
+
+.skills {
+    padding-top: 91px;
+    padding-bottom: 110px;
+    text-align: center;
+
+    &_text {
+        font-family: $textMedium;
+        font-size: 18px;
+        line-height: 22px;
+        color: $baseColor;
+        margin-top: 69px;
+        margin-bottom: 83px;
+    }
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_item {
+        width: 166px;
+        height: 206px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        &-text {
+            font-size: 14px;
+            line-height: 17px;
+            color: $secondColor;
+            padding-top: 24px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &_star {
+        fill: $baseColor;
     }
 }
