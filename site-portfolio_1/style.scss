@@ -1,0 +1,53 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $textBold;
+}
+
+.center {
+    padding-left: calc(50% - 470px);
+    padding-right: calc(50% - 470px);
+}
+
+.top {
+    box-sizing: border-box;
+    padding-top: 32px;
+    padding-bottom: 104px;
+
+    &_content {
+        padding-top: 40px;
+    }
+}
+
+.nav {
+    border-bottom: 1px solid $secondColor;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    padding-bottom: 32px;
+
+
+    &_box {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    &_item {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &_link {
+        text-decoration: none;
+        color: $secondColor;
+
+        &:hover {
+            color: $baseColor;
+        }
+    }
+}
