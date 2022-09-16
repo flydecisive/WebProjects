@@ -79,6 +79,10 @@ body {
     align-items: center;
 }
 
+.menu-mob {
+    display: none;
+}
+
 .navigation_link {
     font-style: normal;
     font-weight: 400;
@@ -216,13 +220,12 @@ body {
     margin-top: 32px;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
     column-gap: 32px;
     row-gap: 56px;
 }
 
 .product {
-    width: 378px;
+    max-width: 378px;
 }
 
 .product_img {
@@ -493,3 +496,4 @@ body {
 
 @import 'cart';
 @import 'tablet';
+@import 'mobile';

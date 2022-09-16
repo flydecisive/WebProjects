@@ -1,0 +1,190 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-top: 32px;
+        border: none;
+    }
+
+    .input_top {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menu-mob {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .logo {
+        width: 99px;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+    }
+
+    .about_furniture {
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .catalog_link {
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+
+        &-bottom {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .furniture {
+        padding-top: 32px;
+
+        &_content {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        &_item {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+
+            &-big {
+                height: 244px;
+            }
+        }
+    }
+
+    .product_box {
+        padding-top: 32px;
+    }
+
+    .product {
+        grid-column: 1/-1;
+        max-width: none;
+
+        &_img {
+            height: 228px;
+        }
+
+        &_heading {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &_content {
+            padding-bottom: 36px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .about_product {
+        font-size: 14px;
+        line-height: 17px
+    }
+
+    .discont_price,
+    .price {
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .footer {
+        margin-top: 32px;
+
+        &_content {
+            gap: 32px;
+            justify-content: center;
+        }
+    }
+
+    .news {
+        text-align: center;
+    }
+
+    .catalog {
+        &_info {
+            gap: 16px;
+        }
+    }
+
+    .cart-top_title {
+        text-align: center;
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    .cart {
+        padding-top: 92px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        &_content {
+            grid-column: 1 / -1;
+        }
+
+        &_info {
+            &-heading {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            &-text {
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            &-price {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+
+        &_link {
+            font-size: 14px;
+            line-height: 210%;
+        }
+
+        &_img {
+            display: none;
+        }
+
+        &_name-box {
+            display: none;
+        }
+
+        &_item {
+            justify-content: flex-start;
+            gap: 19px;
+        }
+
+        &_button {
+            width: 166px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
