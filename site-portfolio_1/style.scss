@@ -165,3 +165,109 @@ body {
         }
     }
 }
+
+.portfolio {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: $bgColor;
+    padding-top: 113px;
+    padding-bottom: 96px;
+    gap: 47px;
+
+    &_content {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 99px;
+    }
+
+    &_item {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 44px;
+        align-items: center;
+    }
+
+    &_text {
+        font-family: $textMedium;
+        font-size: 18px;
+        line-height: 22px;
+        color: $baseColor;
+    }
+
+    &_link:hover {
+        text-decoration: none;
+    }
+}
+
+.footer {
+    padding-top: 114px;
+    padding-bottom: 123px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+
+    &_text {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: $textMedium;
+
+        &-small {
+            margin-top: 45px;
+            font-family: $textMedium;
+            font-size: 14px;
+            line-height: 17px;
+            color: $secondColor;
+        }
+    }
+
+    &_button {
+        margin-top: 29px;
+        width: 180px;
+        height: 42px;
+        border: 1px solid $baseColor;
+        border-radius: 50px;
+        font-size: 18px;
+        line-height: 22px;
+        background-color: $bgColor;
+
+        &:hover {
+            background-color: $baseColor;
+            color: $bgColor;
+        }
+    }
+
+    &_items {
+        margin-top: 85px;
+        display: flex;
+        gap: 61px;
+    }
+
+    &_item {
+        width: 41px;
+        height: 41px;
+    }
+
+    .linkedin {
+        background-image: url("img/footer_1.svg");
+        background-size: cover;
+    }
+
+    .inst {
+        background-image: url('img/footer_2.svg');
+        background-size: cover;
+    }
+
+    .behance {
+        background-image: url('img/footer_3.svg');
+        background-size: cover;
+    }
+
+    .dribble {
+        background-image: url('img/footer_4.svg');
+        background-size: cover;
+    }
+}

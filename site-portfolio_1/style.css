@@ -155,4 +155,96 @@ body {
   color: #828282;
   padding-top: 24px;
   padding-bottom: 40px;
+}
+
+.portfolio {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding-top: 113px;
+  padding-bottom: 96px;
+  gap: 47px;
+}
+.portfolio_content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 99px;
+}
+.portfolio_item {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 44px;
+  align-items: center;
+}
+.portfolio_text {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+}
+.portfolio_link:hover {
+  text-decoration: none;
+}
+
+.footer {
+  padding-top: 114px;
+  padding-bottom: 123px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+}
+.footer_text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Gilroy-Medium";
+}
+.footer_text-small {
+  margin-top: 45px;
+  font-family: "Gilroy-Medium";
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+.footer_button {
+  margin-top: 29px;
+  width: 180px;
+  height: 42px;
+  border: 1px solid #070707;
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #F6F6F6;
+}
+.footer_button:hover {
+  background-color: #070707;
+  color: #F6F6F6;
+}
+.footer_items {
+  margin-top: 85px;
+  display: flex;
+  gap: 61px;
+}
+.footer_item {
+  width: 41px;
+  height: 41px;
+}
+.footer .linkedin {
+  background-image: url("img/footer_1.svg");
+  background-size: cover;
+}
+.footer .inst {
+  background-image: url("img/footer_2.svg");
+  background-size: cover;
+}
+.footer .behance {
+  background-image: url("img/footer_3.svg");
+  background-size: cover;
+}
+.footer .dribble {
+  background-image: url("img/footer_4.svg");
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
