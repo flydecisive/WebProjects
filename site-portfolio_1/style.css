@@ -144,10 +144,11 @@ body {
 }
 .skills_item {
   width: 166px;
-  height: 206px;
+  height: 215px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  justify-content: space-between;
 }
 .skills_item-text {
   font-size: 14px;
@@ -155,6 +156,17 @@ body {
   color: #828282;
   padding-top: 24px;
   padding-bottom: 40px;
+}
+.skills_rate {
+  display: flex;
+  gap: 9px;
+}
+.skills_star {
+  width: 27px;
+  height: 27px;
+}
+.skills_star-img {
+  fill: #070707;
 }
 
 .portfolio {
@@ -229,22 +241,26 @@ body {
   gap: 61px;
 }
 .footer_item {
-  width: 41px;
-  height: 41px;
+  width: 42px;
+  height: 42px;
 }
 .footer .linkedin {
   background-image: url("img/footer_1.svg");
   background-size: cover;
+  background-position: center;
 }
 .footer .inst {
   background-image: url("img/footer_2.svg");
   background-size: cover;
+  background-position: center;
 }
 .footer .behance {
   background-image: url("img/footer_3.svg");
   background-size: cover;
+  background-position: center;
 }
 .footer .dribble {
   background-image: url("img/footer_4.svg");
   background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */

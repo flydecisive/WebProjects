@@ -151,10 +151,11 @@ body {
 
     &_item {
         width: 166px;
-        height: 206px;
+        height: 215px;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        justify-content: space-between;
 
         &-text {
             font-size: 14px;
@@ -162,6 +163,20 @@ body {
             color: $secondColor;
             padding-top: 24px;
             padding-bottom: 40px;
+        }
+    }
+
+    &_rate {
+        display: flex;
+        gap: 9px;
+    }
+
+    &_star {
+        width: 27px;
+        height: 27px;
+
+        &-img {
+            fill: $baseColor;
         }
     }
 }
@@ -247,27 +262,31 @@ body {
     }
 
     &_item {
-        width: 41px;
-        height: 41px;
+        width: 42px;
+        height: 42px;
     }
 
     .linkedin {
         background-image: url("img/footer_1.svg");
         background-size: cover;
+        background-position: center;
     }
 
     .inst {
         background-image: url('img/footer_2.svg');
         background-size: cover;
+        background-position: center;
     }
 
     .behance {
         background-image: url('img/footer_3.svg');
         background-size: cover;
+        background-position: center;
     }
 
     .dribble {
         background-image: url('img/footer_4.svg');
         background-size: cover;
+        background-position: center;
     }
 }
