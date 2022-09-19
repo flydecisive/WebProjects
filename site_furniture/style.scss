@@ -226,6 +226,14 @@ body {
 
 .product {
     max-width: 378px;
+    transition: all .3s;
+    box-sizing: border-box;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px #ccc;
+        padding: 8px;
+    }
 }
 
 .product_img {
