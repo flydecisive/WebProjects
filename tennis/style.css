@@ -19,10 +19,7 @@ html {
   background-position: center;
   padding-top: 30px;
 }
-.header_logo {
-  margin-right: 124px;
-}
-.header_info {
+.header__info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,23 +27,29 @@ html {
   padding-bottom: 30px;
   border-bottom: 1px solid #FFFFFF;
 }
-.header_nav {
+.header__contacts {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  margin-right: 124px;
+}
+
+.nav {
   margin-right: 185px;
 }
-.header_nav-items {
+
+.menu {
   display: flex;
   gap: 40px;
   flex-flow: row wrap;
 }
-.header_nav-link {
+.menu__link {
   list-style: none;
   color: #FFFFFF;
   font-weight: 500;
   font-size: 1rem;
   line-height: 140%;
   text-decoration: none;
-}
-.header_contacts {
-  display: flex;
-  gap: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -21,11 +21,7 @@ html {
     background-position: center;
     padding-top: 30px;
 
-    &_logo {
-        margin-right: 124px;
-    }
-
-    &_info {
+    &__info {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,27 +30,31 @@ html {
         border-bottom: 1px solid $lightTextColor;
     }
 
-    &_nav {
-        margin-right: 185px;
-
-        &-items {
-            display: flex;
-            gap: 40px;
-            flex-flow: row wrap;
-        }
-
-        &-link {
-            list-style: none;
-            color: $lightTextColor;
-            font-weight: 500;
-            font-size: 1rem;
-            line-height: 140%;
-            text-decoration: none;
-        }
-    }
-
-    &_contacts {
+    &__contacts {
         display: flex;
         gap: 20px;
+    }
+}
+
+.logo {
+    margin-right: 124px;
+}
+
+.nav {
+    margin-right: 185px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    flex-flow: row wrap;
+
+    &__link {
+        list-style: none;
+        color: $lightTextColor;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 140%;
+        text-decoration: none;
     }
 }
