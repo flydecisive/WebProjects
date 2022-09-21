@@ -1,3 +1,33 @@
+@keyframes form-button {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
 @import 'vars';
 
 .cart-top {
@@ -98,6 +128,7 @@
         color: $baseColor;
         text-decoration: underline;
         margin-right: 30px;
+        transition: text-decoration .3s, color .3s;
     }
 
     &_link:hover {
@@ -131,6 +162,7 @@
             appearance: none;
             -moz-appearance: none;
             -webkit-appearance: none;
+            outline: none;
         }
 
         &-number::-webkit-outer-spin-button,
@@ -162,10 +194,11 @@
         line-height: 17px;
         color: #020202;
         background-color: transparent;
+        transition: background-color .3s, color .3s;
     }
 
     &_button:hover {
-        background: $baseColor;
+        background-color: $baseColor;
         color: $textColor;
     }
 
@@ -210,6 +243,7 @@
             color: $baseColor;
             border: none;
             border-bottom: 1px solid #CACDD8;
+            outline: none;
         }
 
         &-input::placeholder {
@@ -240,11 +274,13 @@
             font-size: 16px;
             line-height: 20px;
             color: $baseColor;
+            transition: color .3s, background-color .3s;
         }
 
         &-button:hover {
-            background: $baseColor;
+            background-color: $baseColor;
             color: $textColor;
+            animation: form-button 2s ease 0s 1 normal forwards;
         }
     }
 }

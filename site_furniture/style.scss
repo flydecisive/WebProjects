@@ -63,6 +63,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: $textColor;
+    outline: none;
 }
 
 .input_top::placeholder {
@@ -89,6 +90,8 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: $textColor;
+    transition-property: text-decoration;
+    transition-duration: .3s;
 }
 
 .navigation_link:hover {
@@ -130,13 +133,11 @@ body {
     line-height: 24px;
     text-decoration-line: underline;
     color: $textColor;
+    transition-property: all;
+    transition-duration: .3s;
 }
 
 .catalog_link:hover {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
     color: #888888;
     text-decoration: none;
 }
@@ -305,13 +306,10 @@ body {
     line-height: 24px;
     text-decoration-line: underline;
     color: #000000;
+    transition: all .3s;
 }
 
 .catalog_link-bottom:hover {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
     color: #888888;
     text-decoration: none;
 }
@@ -366,8 +364,12 @@ body {
     gap: 18px;
 }
 
-.footer_icon:hover {
-    color: #000000;
+.footer_icon path {
+    transition: fill .3s;
+}
+
+.footer_icon path:hover {
+    fill: #000000;
 }
 
 .footer_navigation {
@@ -377,6 +379,7 @@ body {
     line-height: 17px;
     color: #888888;
     text-decoration: none;
+    transition: text-decoration .3s;
 }
 
 .footer_navigation:hover {
@@ -415,6 +418,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     margin-bottom: 12px;
+    outline: none;
 }
 
 .email::placeholder {
@@ -426,7 +430,7 @@ body {
 }
 
 .subscribe {
-    background: rgba(222, 215, 215, 0.41);
+    background-color: rgba(222, 215, 215, 0.41);
     border: 1px solid #fff;
     box-sizing: border-box;
     border-radius: 20px;
@@ -437,14 +441,13 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    transition: background-color .3s, color .3s;
 }
 
 .subscribe:hover {
-    background: #000000;
+    background-color: #000000;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
     color: $textColor;
 }
 
@@ -459,19 +462,27 @@ body {
 }
 
 .breadcrumbs {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    color: #000000;
     list-style: none;
     display: flex;
-}
 
-.breadcrumbs_item:not(:last-child)::after {
-    content: "/";
-    padding-left: 8px;
-    padding-right: 8px;
+    &_item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+        transition: color .3s, text-decoration .3s;
+
+        &:hover {
+            color: #888888;
+        }
+
+        &:not(:last-child)::after {
+            content: "/";
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
 }
 
 .catalog_selector {
@@ -491,6 +502,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    outline: none;
 }
 
 .catalog_selector:not([multiple]) {

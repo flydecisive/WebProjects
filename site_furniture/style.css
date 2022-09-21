@@ -61,6 +61,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  outline: none;
 }
 
 .input_top::-moz-placeholder {
@@ -103,6 +104,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  transition-property: -webkit-text-decoration;
+  transition-property: text-decoration;
+  transition-property: text-decoration, -webkit-text-decoration;
+  transition-duration: 0.3s;
 }
 
 .navigation_link:hover {
@@ -145,13 +150,11 @@ body {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #FFFFFF;
+  transition-property: all;
+  transition-duration: 0.3s;
 }
 
 .catalog_link:hover {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #888888;
   text-decoration: none;
 }
@@ -313,13 +316,10 @@ body {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #000000;
+  transition: all 0.3s;
 }
 
 .catalog_link-bottom:hover {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #888888;
   text-decoration: none;
 }
@@ -372,8 +372,12 @@ body {
   gap: 18px;
 }
 
-.footer_icon:hover {
-  color: #000000;
+.footer_icon path {
+  transition: fill 0.3s;
+}
+
+.footer_icon path:hover {
+  fill: #000000;
 }
 
 .footer_navigation {
@@ -383,6 +387,9 @@ body {
   line-height: 17px;
   color: #888888;
   text-decoration: none;
+  transition: -webkit-text-decoration 0.3s;
+  transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s, -webkit-text-decoration 0.3s;
 }
 
 .footer_navigation:hover {
@@ -421,6 +428,7 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   margin-bottom: 12px;
+  outline: none;
 }
 
 .email::-moz-placeholder {
@@ -448,7 +456,7 @@ body {
 }
 
 .subscribe {
-  background: rgba(222, 215, 215, 0.41);
+  background-color: rgba(222, 215, 215, 0.41);
   border: 1px solid #fff;
   box-sizing: border-box;
   border-radius: 20px;
@@ -459,14 +467,13 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .subscribe:hover {
-  background: #000000;
+  background-color: #000000;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
   color: #FFFFFF;
 }
 
@@ -480,15 +487,22 @@ body {
 }
 
 .breadcrumbs {
+  list-style: none;
+  display: flex;
+}
+.breadcrumbs_item {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: #000000;
-  list-style: none;
-  display: flex;
+  transition: color 0.3s, -webkit-text-decoration 0.3s;
+  transition: color 0.3s, text-decoration 0.3s;
+  transition: color 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
 }
-
+.breadcrumbs_item:hover {
+  color: #888888;
+}
 .breadcrumbs_item:not(:last-child)::after {
   content: "/";
   padding-left: 8px;
@@ -512,6 +526,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  outline: none;
 }
 
 .catalog_selector:not([multiple]) {
@@ -522,6 +537,52 @@ body {
 }
 
 /*конец блока каталога */
+@-webkit-keyframes form-button {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes form-button {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 .cart-top {
   height: 400px;
   background-image: url(./img/cartbg.jpg);
@@ -610,6 +671,9 @@ body {
   color: #000000;
   text-decoration: underline;
   margin-right: 30px;
+  transition: color 0.3s, -webkit-text-decoration 0.3s;
+  transition: text-decoration 0.3s, color 0.3s;
+  transition: text-decoration 0.3s, color 0.3s, -webkit-text-decoration 0.3s;
 }
 .cart_link:hover {
   color: #888888;
@@ -641,6 +705,7 @@ body {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  outline: none;
 }
 .cart_input-number::-webkit-outer-spin-button, .cart_input-number::-webkit-inner-spin-button {
   display: none;
@@ -666,9 +731,10 @@ body {
   line-height: 17px;
   color: #020202;
   background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
 }
 .cart_button:hover {
-  background: #000000;
+  background-color: #000000;
   color: #FFFFFF;
 }
 .cart_form {
@@ -710,6 +776,7 @@ body {
   color: #000000;
   border: none;
   border-bottom: 1px solid #CACDD8;
+  outline: none;
 }
 .cart_form-input::-moz-placeholder {
   font-style: normal;
@@ -751,10 +818,13 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  transition: color 0.3s, background-color 0.3s;
 }
 .cart_form-button:hover {
-  background: #000000;
+  background-color: #000000;
   color: #FFFFFF;
+  -webkit-animation: form-button 2s ease 0s 1 normal forwards;
+          animation: form-button 2s ease 0s 1 normal forwards;
 }
 
 @media (max-width: 1024px) {
