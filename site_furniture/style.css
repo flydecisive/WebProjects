@@ -278,7 +278,6 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #050505;
-  margin-bottom: 30px;
 }
 
 .discont_price::after {
@@ -733,8 +732,15 @@ body {
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s;
 }
+.cart_button a {
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
 .cart_button:hover {
   background-color: #000000;
+  color: #FFFFFF;
+}
+.cart_button:hover a {
   color: #FFFFFF;
 }
 .cart_form {

@@ -197,8 +197,17 @@
         transition: background-color .3s, color .3s;
     }
 
+    &_button a {
+        color: $baseColor;
+        transition: background-color .3s, color .3s;
+    }
+
     &_button:hover {
         background-color: $baseColor;
+        color: $textColor;
+    }
+
+    &_button:hover a {
         color: $textColor;
     }
 
