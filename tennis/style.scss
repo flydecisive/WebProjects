@@ -145,3 +145,117 @@ html {
         color: $lightTextColor;
     }
 }
+
+.courts {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    padding-bottom: 150px;
+
+    &__element {
+        border: 1px solid$borderLightColor;
+        grid-column: span 4;
+        height: 500px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 65px;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 27px;
+        line-height: 140%;
+        color: $lightTextColor;
+    }
+
+    &__element1 {
+        background-image: url('img/court_1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__element2 {
+        background-image: url('img/court_2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__element3 {
+        background-image: url('img/court_3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: $textDarkColor;
+}
+
+.middle {
+    display: grid;
+    justify-items: end;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__content {
+        background-color: $borderLightColor;
+        padding-top: 70px;
+        padding-bottom: 84px;
+        padding-right: 60px;
+        padding-left: 146px;
+        position: relative;
+        grid-column: 6 / 12;
+    }
+
+    &__text {
+        margin-top: 25px;
+        width: 430px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 140%;
+        color: $textDarkColor;
+    }
+
+    &__subheading {
+        margin-top: 25px;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 140%;
+        color: $textDarkColor;
+    }
+
+    &__box {}
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 23px;
+        width: 430px;
+    }
+
+    &__element {
+        padding-left: 1.5em;
+        text-indent: -1.5em;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: $textDarkColor;
+
+        &::before {
+            content: url(img/list_style.svg);
+            padding-right: 1.2em;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        left: -440px;
+        top: 70px;
+    }
+}
