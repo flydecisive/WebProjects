@@ -257,3 +257,44 @@ html {
         top: 70px;
     }
 }
+
+.slider {
+    &__button {
+        width: 45px;
+        height: 45px;
+        background-color: $accentColor;
+        border: none;
+    }
+
+    &__arrow {
+        &-right {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.coaches {
+    padding-top: 150px;
+
+    &__top {
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__elements {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 12fr));
+        justify-items: center;
+        gap: 54px;
+        grid-column: span 2;
+    }
+
+    &__element {}
+}

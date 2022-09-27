@@ -228,4 +228,35 @@ html {
   position: absolute;
   left: -440px;
   top: 70px;
+}
+
+.slider__button {
+  width: 45px;
+  height: 45px;
+  background-color: #8D86C9;
+  border: none;
+}
+.slider__arrow-right {
+  transform: rotate(180deg);
+}
+
+.coaches {
+  padding-top: 150px;
+}
+.coaches__top {
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.coaches__buttons {
+  display: flex;
+  gap: 15px;
+}
+.coaches__elements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 12fr));
+  justify-items: center;
+  gap: 54px;
+  grid-column: span 2;
 }/*# sourceMappingURL=style.css.map */
