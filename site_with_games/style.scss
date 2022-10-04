@@ -1,0 +1,51 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: $textColor;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 64px 50px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url('img/header_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 217px;
+    padding-bottom: 493px;
+
+    &__text {
+        grid-column: span 5;
+        grid-row-start: 2;
+    }
+
+    &__button {
+        grid-row-start: 3;
+    }
+}
+
+.title {
+    grid-column: span 7;
+    font-weight: 700;
+    font-size: 3.55rem;
+    line-height: 4.33rem;
+    margin-bottom: 32px;
+}
+
+.button {
+    width: 234px;
+    height: 48px;
+}
