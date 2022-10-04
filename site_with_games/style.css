@@ -28,9 +28,23 @@ body {
 .header__text {
   grid-column: span 5;
   grid-row-start: 2;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.77rem;
+}
+.header__text-bold {
+  font-weight: 700;
 }
 .header__button {
   grid-row-start: 3;
+  margin-top: 44px;
+}
+.header__link {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.22rem;
+  text-decoration: none;
+  color: #fff;
 }
 
 .title {

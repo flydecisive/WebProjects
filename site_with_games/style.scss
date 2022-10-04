@@ -30,10 +30,26 @@ body {
     &__text {
         grid-column: span 5;
         grid-row-start: 2;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.77rem;
+
+        &-bold {
+            font-weight: 700;
+        }
     }
 
     &__button {
         grid-row-start: 3;
+        margin-top: 44px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.22rem;
+        text-decoration: none;
+        color: $textColor;
     }
 }
 
