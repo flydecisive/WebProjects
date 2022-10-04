@@ -12,8 +12,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 601px);
+    padding-right: calc(50% - 601px);
 }
 
 .header {
@@ -39,17 +39,9 @@ body {
         }
     }
 
-    &__button {
+    &__form {
         grid-row-start: 3;
         margin-top: 44px;
-    }
-
-    &__link {
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1.22rem;
-        text-decoration: none;
-        color: $textColor;
     }
 }
 
@@ -64,4 +56,66 @@ body {
 .button {
     width: 234px;
     height: 48px;
+    background: $buttonColor;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.22rem;
+    color: $textColor;
+}
+
+.games {
+    background: $sectionBgColor;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+    &__link {
+        display: block;
+        text-decoration: none;
+    }
+
+    &__element {
+        width: 379px;
+        height: 300px;
+        border-radius: 16px;
+        position: relative;
+
+        &-1 {
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+                url('img/games1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &-2 {
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+                url('img/games2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &-3 {
+            background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+                url('img/games3.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 1.33rem;
+        line-height: 1.77rem;
+        color: $textColor;
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+    }
 }

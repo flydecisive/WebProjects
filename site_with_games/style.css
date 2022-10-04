@@ -10,8 +10,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 601px);
+  padding-right: calc(50% - 601px);
 }
 
 .header {
@@ -35,16 +35,9 @@ body {
 .header__text-bold {
   font-weight: 700;
 }
-.header__button {
+.header__form {
   grid-row-start: 3;
   margin-top: 44px;
-}
-.header__link {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.22rem;
-  text-decoration: none;
-  color: #fff;
 }
 
 .title {
@@ -58,4 +51,57 @@ body {
 .button {
   width: 234px;
   height: 48px;
+  background: #9C0332;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.22rem;
+  color: #fff;
+}
+
+.games {
+  background: #000915;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 32px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.games__link {
+  display: block;
+  text-decoration: none;
+}
+.games__element {
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  position: relative;
+}
+.games__element-1 {
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("img/games1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.games__element-2 {
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("img/games2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.games__element-3 {
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url("img/games3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.games__text {
+  font-weight: 600;
+  font-size: 1.33rem;
+  line-height: 1.77rem;
+  color: #fff;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
 }/*# sourceMappingURL=style.css.map */
