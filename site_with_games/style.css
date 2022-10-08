@@ -1,3 +1,12 @@
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .games__element {
+    max-width: 343px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

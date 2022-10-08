@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {}
+
+    .games {
+        &__element {
+            max-width: 343px;
+        }
+    }
+}
