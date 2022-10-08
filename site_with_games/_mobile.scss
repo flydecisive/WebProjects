@@ -4,9 +4,30 @@
         padding-right: 16px;
     }
 
-    .header {}
+    .title {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .header {
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding-top: 238px;
+        padding-bottom: 238px;
+        background-position: 32%;
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+        }
+    }
 
     .games {
+        justify-content: center;
+
         &__element {
             max-width: 343px;
         }
