@@ -52,6 +52,13 @@ body {
   margin-bottom: 32px;
 }
 
+.heading {
+  font-weight: 700;
+  font-size: 2.66rem;
+  line-height: 3.27rem;
+  color: #fff;
+}
+
 .button {
   width: 234px;
   height: 48px;
@@ -119,6 +126,26 @@ body {
   position: absolute;
   bottom: 32px;
   left: 32px;
+}
+
+.match {
+  background-color: #000915;
+}
+.match__info {
+  padding-top: 233.5px;
+  padding-bottom: 233.5px;
+}
+.match__content {
+  width: 584px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 32px;
+}
+.match__text {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.77rem;
+  color: #fff;
 }
 
 @media (max-width: 767px) {
