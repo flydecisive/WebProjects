@@ -29,3 +29,23 @@ do {
 const randomNumber = () => Math.floor(Math.random() * 10 + 1);
 
 console.log(randomNumber());
+
+// Задача 6
+const numberList = (n) => {
+    let i = 1;
+    const arr = [];
+    do {
+        arr[i - 1] = i;
+        i++;
+    } while (i <= n)
+
+    let sum = 0;
+
+    arr.forEach(item => {
+        sum += item;
+    });
+
+    console.log(sum);
+}
+
+numberList(Math.floor(Math.random() * 100 + 1));
