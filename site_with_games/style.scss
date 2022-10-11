@@ -152,6 +152,10 @@ body {
     &__info {
         padding-top: 233.5px;
         padding-bottom: 233.5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__content {

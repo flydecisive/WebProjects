@@ -134,6 +134,10 @@ body {
 .match__info {
   padding-top: 233.5px;
   padding-bottom: 233.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .match__content {
   width: 584px;
@@ -176,5 +180,26 @@ body {
   }
   .games__element {
     max-width: 343px;
+  }
+  .match__info {
+    padding-top: 51px;
+    padding-bottom: 85px;
+    gap: 64px;
+  }
+  .match__content {
+    align-items: center;
+  }
+  .match__img {
+    width: 344px;
+    height: 236px;
+  }
+  .match__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .heading {
+    font-size: 32px;
+    line-height: 39px;
   }
 }/*# sourceMappingURL=style.css.map */

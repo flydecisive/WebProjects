@@ -32,4 +32,32 @@
             max-width: 343px;
         }
     }
+
+    .match {
+        &__info {
+            padding-top: 51px;
+            padding-bottom: 85px;
+            gap: 64px;
+        }
+
+        &__content {
+            align-items: center;
+        }
+
+        &__img {
+            width: 344px;
+            height: 236px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+
+    .heading {
+        font-size: 32px;
+        line-height: 39px;
+    }
 }
