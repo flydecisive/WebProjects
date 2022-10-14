@@ -132,8 +132,7 @@ body {
   background-color: #000915;
 }
 .match__info {
-  padding-top: 233.5px;
-  padding-bottom: 233.5px;
+  height: 800px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -150,6 +149,16 @@ body {
   font-size: 1rem;
   line-height: 1.77rem;
   color: #fff;
+}
+
+.words__text {
+  width: 588px;
+}
+.words__content {
+  order: 2;
+}
+.words__img {
+  order: 1;
 }
 
 @media (max-width: 767px) {
@@ -201,5 +210,14 @@ body {
   .heading {
     font-size: 32px;
     line-height: 39px;
+  }
+  .words__text {
+    width: 343px;
+  }
+  .words__content {
+    order: 1;
+  }
+  .words__img {
+    order: 2;
   }
 }/*# sourceMappingURL=style.css.map */

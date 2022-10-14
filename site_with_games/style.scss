@@ -149,9 +149,9 @@ body {
 .match {
     background-color: $sectionBgColor;
 
+
     &__info {
-        padding-top: 233.5px;
-        padding-bottom: 233.5px;
+        height: 800px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -170,6 +170,20 @@ body {
         font-size: 1rem;
         line-height: 1.77rem;
         color: $textColor;
+    }
+}
+
+.words {
+    &__text {
+        width: 588px;
+    }
+
+    &__content {
+        order: 2;
+    }
+
+    &__img {
+        order: 1;
     }
 }
 

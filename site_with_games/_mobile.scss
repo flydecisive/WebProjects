@@ -60,4 +60,18 @@
         font-size: 32px;
         line-height: 39px;
     }
+
+    .words {
+        &__text {
+            width: 343px;
+        }
+
+        &__content {
+            order: 1;
+        }
+
+        &__img {
+            order: 2;
+        }
+    }
 }

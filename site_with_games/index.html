@@ -32,7 +32,7 @@
                 </p>
             </div>
         </a>
-        <a href="#" class="games__link">
+        <a href="#match__words" class="games__link">
             <div class="games__element games__element-2">
                 <p class="games__text">
                     Игра 2
@@ -47,7 +47,7 @@
             </div>
         </a>
     </section>
-    <section class="match match__season center" id="match__season">
+    <section class="match season center" id="match__season">
         <div class="match__info">
             <div class="match__content">
                 <h2 class="heading">Времена года!</h2>
@@ -61,7 +61,21 @@
             </div>
             <img class="match__img" src="img/game1.png" alt="Игра 1">
         </div>
+    </section>
 
+    <section class="match words center" id="match__words">
+        <div class="match__info">
+            <div class="match__content words__content">
+                <h2 class="heading">Запомни слова </h2>
+                <p class="match__text words__text">
+                    При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.
+                </p>
+                <form action="#" class="match__form" onclick="rememberWords();">
+                    <button class="button">Играть!</button>
+                </form>
+            </div>
+            <img class="match__img words__img" src="img/game2.png" alt="Игра 1">
+        </div>
     </section>
 
     <script src="script.js"></script>
