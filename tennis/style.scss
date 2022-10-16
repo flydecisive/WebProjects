@@ -195,6 +195,17 @@ html {
     font-size: 36px;
     line-height: 140%;
     color: $textDarkColor;
+
+    &__small {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 140%;
+        text-align: center;
+        color: $textDarkColor;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
 }
 
 .middle {
@@ -275,6 +286,7 @@ html {
 
 .coaches {
     padding-top: 150px;
+    padding-bottom: 150px;
 
     &__top {
         margin-bottom: 75px;
@@ -290,11 +302,95 @@ html {
 
     &__elements {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(1fr, 12fr));
+        grid-template-columns: repeat(12, 1fr);
         justify-items: center;
         gap: 54px;
+    }
+
+    &__element {
         grid-column: span 2;
     }
 
-    &__element {}
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+    }
+}
+
+.servicing {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-bottom: 150px;
+    gap: 128px;
+
+    &__heading {
+        margin-bottom: 75px;
+    }
+}
+
+.ticket {
+    grid-column: span 5;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+
+    &__element {
+        background-color: $accentColor;
+        padding-top: 15.5px;
+        padding-bottom: 15.5px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 140%;
+        color: $lightTextColor;
+    }
+}
+
+.servicies {
+    grid-column: span 6;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__content {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/servicies.jpg");
+        height: 330px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        position: relative;
+
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 140%;
+        color: $lightTextColor;
+        position: absolute;
+        left: 40px;
+        bottom: 30px;
+    }
 }
