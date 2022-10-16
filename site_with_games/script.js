@@ -9,13 +9,13 @@ const seasons = () => {
             if (season === 1 || season === 12 || season === 2) {
                 alert('Зима');
                 answer = true;
-            } else if (season > 2 & season <= 5) {
+            } else if (season > 2 && season <= 5) {
                 alert('Весна');
                 answer = true;
-            } else if (season > 5 & season <= 8) {
+            } else if (season > 5 && season <= 8) {
                 alert('Лето');
                 answer = true;
-            } else if (season > 8 & season <= 11) {
+            } else if (season > 8 && season <= 11) {
                 alert('Осень');
                 answer = true;
             } else {
@@ -36,12 +36,12 @@ const rememberWords = () => {
     let firstElement = mixedWords[0].toLocaleLowerCase();
     let lastElement = mixedWords[mixedWords.length - 1].toLocaleLowerCase();
     let result;
-    if (userAnswerFirst === firstElement & userAnswerSecond === lastElement) {
+    if (userAnswerFirst === firstElement && userAnswerSecond === lastElement) {
         result = 'Поздравляю, вы угадали оба элемента';
-    } else if ((userAnswerFirst === firstElement & userAnswerSecond !== lastElement)
-        || (userAnswerFirst !== firstElement & userAnswerSecond === lastElement)) {
+    } else if ((userAnswerFirst === firstElement && userAnswerSecond !== lastElement)
+        || (userAnswerFirst !== firstElement && userAnswerSecond === lastElement)) {
         result = 'Вы были близки к победе!';
-    } else if (userAnswerFirst !== firstElement & userAnswerSecond !== lastElement) {
+    } else if (userAnswerFirst !== firstElement && userAnswerSecond !== lastElement) {
         result = 'Вы ответили не верно';
     }
     alert(result);
