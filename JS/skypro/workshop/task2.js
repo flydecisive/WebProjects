@@ -70,3 +70,48 @@ const passwordGeneration = () => {
 }
 
 passwordGeneration();
+
+// Задача 9
+const triangleAreaCalculator = (side1, side2, side3) => {
+    const halfMeter = (side1 + side2 + side3) / 2;
+    const square = Math.sqrt(halfMeter * (halfMeter - side1) * (halfMeter - side2) * (halfMeter - side3));
+    return square;
+}
+
+console.log(triangleAreaCalculator(3, 3, 3));
+
+// Задача 10
+const riddle = (textOfRiddle, answer) => {
+    alert(textOfRiddle);
+    let attempt = 3;
+    let correct = false;
+    alert(`Отгадайте загадку, у вас ${attempt} попытки`);
+    while (attempt > 0) {
+        let userAnswer = prompt('Введите ваш ответ');
+        userAnswer = userAnswer.toLowerCase();
+        for (let element of answer) {
+            if (element === userAnswer) {
+                correct = true;
+            }
+        }
+        if (correct) {
+            alert('Поздравляем, вы отгадали загадку');
+            break;
+        } else {
+            --attempt;
+            if (attempt === 2) {
+                alert(`Неверно, у вас осталось ${attempt} попытки`);
+            } else {
+                alert(`Неверно, у вас осталось ${attempt} попытка`);
+            }
+        }
+    }
+    if (attempt === 0) {
+        alert('Попытки закончились, вы проиграли');
+    }
+}
+
+const textOfRiddle = 'Зимой и летом одним цветом';
+const answer = ['ель', 'елка', 'ёлка'];
+
+riddle(textOfRiddle, answer);
