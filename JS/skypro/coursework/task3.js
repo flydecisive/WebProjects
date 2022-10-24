@@ -23,4 +23,26 @@ for (let key of keyName) {
 console.log(sum);
 
 // Задача 6
+const getMonth = (months, language, month) => {
+    let monthName = Object.values(months[language]);
+    for (let i = 0; i <= monthName.length; i++) {
+        if (month === i) {
+            alert(monthName[i - 1]);
+            break;
+        }
+    }
+}
+
+const months = {
+    ru: ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь',],
+    en: ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'septemper', 'october', 'november', 'december',],
+}
+
+let language = prompt("Введите ru или en");
+language = language.toLowerCase();
+let month = prompt("Введите номер месяца, который вы хотите вывести");
+month = Number(month);
+
+getMonth(months, language, month);
+
 
