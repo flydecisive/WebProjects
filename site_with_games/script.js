@@ -51,8 +51,26 @@ const riddle = (question, answer, hint) => {
     let attempt = 3;
     let hintCount = 2;
     alert(question);
+    while (attempt > 0) {
+        let userAnswer = prompt('Введите отгадку');
+        userAnswer = userAnswer.toLocaleLowerCase();
+        if (userAnswer === answer) {
+            alert('Поздравляю, вы отгадали загадку!');
+            break;
+        } else {
+            attempt--;
+            if (hintCount > 0 && attempt >= 1) {
+                alert(`Даю вам подсказку: ${hint[hintCount - 1]}`);
+                hintCount--;
+            }
+        }
+        if (attempt === 0 && userAnswer !== answer) {
+            alert(`Вы не отгадали загадку!
+            Правильный ответ: ${answer}`);
+        }
+    }
 }
 
 const question = 'В лесу без огня котёл кипит.';
 const answer = 'муравейник';
-const hint = ['Представляющей собой кучу из кусочков листьев, хвои, веточек и земли', 'Название гнезда насекомых'];
+const hint = ['Представляет собой кучу из кусочков листьев, хвои, веточек и земли', 'Название гнезда насекомых'];
