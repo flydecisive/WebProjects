@@ -46,3 +46,13 @@ const rememberWords = () => {
     }
     alert(result);
 }
+
+const riddle = (question, answer, hint) => {
+    let attempt = 3;
+    let hintCount = 2;
+    alert(question);
+}
+
+const question = 'В лесу без огня котёл кипит.';
+const answer = 'муравейник';
+const hint = ['Представляющей собой кучу из кусочков листьев, хвои, веточек и земли', 'Название гнезда насекомых'];

@@ -34,9 +34,14 @@
     }
 
     .match {
+        box-sizing: border-box;
+
         &__info {
+            height: 653px;
             padding-top: 51px;
             padding-bottom: 85px;
+            gap: 64px;
+            justify-content: center;
             gap: 64px;
         }
 
@@ -62,6 +67,10 @@
     }
 
     .words {
+        &__info {
+            padding-bottom: 90px;
+        }
+
         &__text {
             width: 343px;
         }
@@ -72,6 +81,23 @@
 
         &__img {
             order: 2;
+        }
+    }
+
+    .riddle {
+        background-position: 32%;
+
+        &__info {
+            height: 800px;
+            box-sizing: border-box;
+            padding-top: 51px;
+            padding-bottom: 487px;
+            gap: 32px;
+        }
+
+        &__text {
+            text-align: center;
+            width: 343px;
         }
     }
 }

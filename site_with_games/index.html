@@ -39,7 +39,7 @@
                 </p>
             </div>
         </a>
-        <a href="#" class="games__link">
+        <a href="#match__riddle" class="games__link">
             <div class="games__element games__element-3">
                 <p class="games__text">
                     Игра 3
@@ -64,7 +64,7 @@
     </section>
 
     <section class="match words center" id="match__words">
-        <div class="match__info">
+        <div class="match__info words__info">
             <div class="match__content words__content">
                 <h2 class="heading">Запомни слова </h2>
                 <p class="match__text words__text">
@@ -77,6 +77,22 @@
             <img class="match__img words__img" src="img/game2.png" alt="Игра 1">
         </div>
     </section>
+
+    <section class="match riddle center" id="match__riddle">
+        <div class="match__info riddle__info">
+            <h2 class="heading">Игра в загадки </h2>
+            <p class="match__text riddle__text">
+                Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то
+                компьютер даст вам <br>подсказку. У вас будет три попытки и две подсказки.
+            </p>
+            <form action="#" class="match__form" onclick="riddle(question, answer, hint);">
+                <button class="button">Играть!</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer center">
+        <p class="footer__text">Все права защищены</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
