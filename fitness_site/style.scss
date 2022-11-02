@@ -151,6 +151,29 @@ a {
     }
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding-bottom: 54px;
+    padding-top: 4px;
+
+    &__img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+hr {
+    width: 957px;
+    margin-left: 212px;
+    margin-right: 212px;
+    margin-top: 52px;
+    height: 3px;
+    background-color: $baseColor;
+    border: none;
+}
+
 .athlete {
     width: 590px;
     height: 642px;
