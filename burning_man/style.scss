@@ -34,6 +34,61 @@ body {
             scale: 1.25;
         }
     }
+
+    &__text {
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $textLight;
+        margin-top: 216px;
+    }
+
+    &__button {
+        font-size: 17px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $textLight;
+        border: 1px solid $textLight;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 23px;
+        padding-right: 23px;
+        margin-top: 19px;
+        background-color: transparent;
+        transition: color .3s, background-color .3s;
+
+        &:hover {
+            background-color: $textLight;
+            color: $textDark;
+        }
+    }
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: $textDark;
+
+    &__big {
+        font-size: 100px;
+        line-height: 151px;
+        text-transform: uppercase;
+        color: $textLight;
+    }
+
+    &__mini {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: $textDark;
+        margin-top: 58px;
+    }
 }
 
 .nav {
@@ -68,5 +123,56 @@ body {
         color: $textLight;
         font-size: 14px;
         line-height: 21px;
+    }
+}
+
+.about {
+    padding-top: 113px;
+
+    &__container {
+        display: flex;
+        gap: 36px;
+    }
+
+    &__text {
+        font-family: 'Open Sans';
+        margin-top: 19px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $textDark;
+        text-align: justify;
+    }
+
+    &__left,
+    &__right {
+        width: 564px;
+    }
+}
+
+.img {
+    &__container {
+        display: flex;
+        gap: 29px;
+        margin-top: 67px;
+
+        &-left {
+            margin-top: 118px;
+        }
+    }
+}
+
+.footer {
+    padding-top: 114px;
+    padding-bottom: 80px;
+    display: flex;
+    gap: 55px;
+
+    &__text {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: $textDark;
     }
 }

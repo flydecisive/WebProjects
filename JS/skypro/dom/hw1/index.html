@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="header" class="header">Почему зимовка дешевле чем обычный отпуск или сколько стоила зимовка в Бразилии?</h1>
+
+    <p>
+        Воу-воу подождите, перед тем как меня линчуют за кликбейт сразу скажу, что я имею ввиду стоимость путешествия на
+        человеко-день т.е. эта статья будет о том, почему длительные путешествия выходят значительно дешевле в пересчете
+        на
+        день в поездке, чем обычный отпуск. Думаю что будет много очевидных мыслей и примеров, но возможнo вы пока не
+        складывали так всё это в одну картину!
+    </p>
+
+    <p>
+        Для начала немного бэкграунда, в этом годy мы съездили на зимовку в Бразилию, это была первая такая длительная
+        поездка "в отпуск" всей семьёй и по итогам этой поездки я понял насколько на самом деле такие длительные и
+        медленные
+        путешествия дешевле чем обычные короткие поездки в отпуск. Ниже расскажу всё по пунктам!
+    </p>
+
+    <input type="text" id="inp" class="inp">
+    <button id="btn" class="btn">Применить</button>
+
+
+    <script>
+        const button = document.getElementById('btn');
+        const input = document.getElementById('inp');
+        const header = document.getElementById('header');
+
+        button.onclick = function () {
+            header.textContent = input.value;
+            input.value = '';
+        }
+    </script>
+</body>
+
+</html>
