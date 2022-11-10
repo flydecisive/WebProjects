@@ -7,8 +7,8 @@ let baseGreen = 0;
 let baseBlue = 0;
 
 const changeBtn1 = () => {
-    if (baseRed < 255) {
-        baseRed += 85;
+    if (baseRed < 153) {
+        baseRed += 17;
     }
     let color = `rgb(${baseRed}, 0, 0)`;
     return color;
@@ -16,15 +16,15 @@ const changeBtn1 = () => {
 
 const changeBtn2 = () => {
     if (baseGreen < 153) {
-        baseGreen += 51;
+        baseGreen += 17;
     }
-    let color = `rgb(${baseRed / 3}, ${baseGreen}, 0)`;
+    let color = `rgb(${baseGreen / 2}, ${baseGreen}, 0)`;
     return color;
 }
 
 const changeBtn3 = () => {
-    if (baseBlue < 255) {
-        baseBlue += 85;
+    if (baseBlue < 153) {
+        baseBlue += 17;
     }
     let color = `rgb(0, 0, ${baseBlue})`;
     return color;
