@@ -6,7 +6,7 @@ let baseRed = 0;
 let baseGreen = 0;
 let baseBlue = 0;
 
-const changeBtn1 = () => {
+const changeBtn1 = function () {
     if (baseRed < 153) {
         baseRed += 17;
     }
@@ -14,7 +14,7 @@ const changeBtn1 = () => {
     return color;
 }
 
-const changeBtn2 = () => {
+const changeBtn2 = function () {
     if (baseGreen < 153) {
         baseGreen += 17;
     }
@@ -22,7 +22,7 @@ const changeBtn2 = () => {
     return color;
 }
 
-const changeBtn3 = () => {
+const changeBtn3 = function () {
     if (baseBlue < 153) {
         baseBlue += 17;
     }
@@ -30,14 +30,14 @@ const changeBtn3 = () => {
     return color;
 }
 
-btn1.onclick = () => {
+btn1.onclick = function () {
     btn1.style.backgroundColor = changeBtn1();
 }
 
-btn2.onclick = () => {
+btn2.onclick = function () {
     btn2.style.backgroundColor = changeBtn2();
 }
 
-btn3.onclick = () => {
+btn3.onclick = function () {
     btn3.style.backgroundColor = changeBtn3();
 }

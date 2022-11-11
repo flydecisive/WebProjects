@@ -1,7 +1,7 @@
 const holeButton = document.getElementById('holeButton');
 
 
-holeButton.onclick = () => {
+holeButton.onclick = function () {
     location.href = 'dragon.html';
 }
 
