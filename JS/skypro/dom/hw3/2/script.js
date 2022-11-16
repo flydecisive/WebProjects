@@ -27,6 +27,7 @@ button.onclick = function () {
 
         if (deltaTime === 0) {
             resetClicks();
+            button.setAttribute('disabled', 1);
         }
     }
 }
