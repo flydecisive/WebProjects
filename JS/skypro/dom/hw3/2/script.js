@@ -15,7 +15,6 @@ function buttonClickHandler() {
 }
 
 const clicks = [];
-
 button.onclick = function () {
     let date = new Date();
     let seconds = date.getSeconds();
