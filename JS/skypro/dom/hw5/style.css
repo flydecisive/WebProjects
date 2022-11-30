@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes changeContent {
+  0% {
+    transform: rotate(0deg);
+  }
+  1.66%,
+  3.33% {
+    transform: rotate(12deg);
+  }
+  4.99%,
+  6.66% {
+    transform: rotate(24deg);
+  }
+  8.32%,
+  9.99% {
+    transform: rotate(36deg);
+  }
+  11.65%,
+  13.32% {
+    transform: rotate(48deg);
+  }
+  14.98%,
+  16.65% {
+    transform: rotate(60deg);
+  }
+  18.31%,
+  19.98% {
+    transform: rotate(72deg);
+  }
+  21.65%,
+  23.31% {
+    transform: rotate(84deg);
+  }
+  24.98%,
+  26.65% {
+    transform: rotate(96deg);
+  }
+  28.31%,
+  29.98% {
+    transform: rotate(108deg);
+  }
+  31.65%,
+  33.33% {
+    transform: rotate(120deg);
+  }
+  34.98%,
+  36.65% {
+    transform: rotate(132deg);
+  }
+  38.33%,
+  39.98% {
+    transform: rotate(144deg);
+  }
+  41.65%,
+  43.33% {
+    transform: rotate(156deg);
+  }
+  44.98%,
+  46.65% {
+    transform: rotate(168deg);
+  }
+  48.33%,
+  50% {
+    transform: rotate(180deg);
+  }
+  51.65%,
+  53.33% {
+    transform: rotate(192deg);
+  }
+  54.99%,
+  56.65% {
+    transform: rotate(204deg);
+  }
+  58.33%,
+  59.99% {
+    transform: rotate(216deg);
+  }
+  61.65%,
+  63.33% {
+    transform: rotate(228deg);
+  }
+  64.99%,
+  66.66% {
+    transform: rotate(240deg);
+  }
+  68.33%,
+  69.99% {
+    transform: rotate(252deg);
+  }
+  71.66%, 73.33% {
+    transform: rotate(264deg);
+  }
+  74.99%,
+  76.66% {
+    transform: rotate(276deg);
+  }
+  78.33%,
+  79.99% {
+    transform: rotate(288deg);
+  }
+  81.66%,
+  83.33% {
+    transform: rotate(300deg);
+  }
+  84.99%,
+  86.66% {
+    transform: rotate(312deg);
+  }
+  88.33%,
+  89.99% {
+    transform: rotate(324deg);
+  }
+  91.66%,
+  93.33% {
+    transform: rotate(336deg);
+  }
+  94.99%,
+  96.66% {
+    transform: rotate(348deg);
+  }
+  98.33%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background: rgb(144, 144, 170);
+  transition: all 0.5s;
+  opacity: 1;
+  color: white;
+}
+
+.preloader::after {
+    animation: changeContent 2s linear infinite;
+    display: block;
+    content: "⌛";
+    font-size: 80px;
+}
+
+.img {
+  max-width: 100vw;
+  max-height: 99vh;
+}
