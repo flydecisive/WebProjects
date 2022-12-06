@@ -1,0 +1,12 @@
+.element {
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
