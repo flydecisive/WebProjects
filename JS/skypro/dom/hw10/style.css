@@ -1,0 +1,24 @@
+.fa-star {
+    color: grey;
+}
+
+.fa-star-yellow {
+    color: goldenrod;
+}
+
+.form {
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.button {
+    width: 100px;
+}
+
+.form__comment {
+    height: 200px;
+    width: 100%;
+}
