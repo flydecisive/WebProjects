@@ -1,0 +1,11 @@
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 25px;
+    gap: 10px;
+}
+
+.text {
+    margin: 0;
+}

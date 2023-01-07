@@ -1,0 +1,14 @@
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+    margin-top: 45vh;
+}
+
+.text {
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+}

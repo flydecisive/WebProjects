@@ -1,0 +1,1 @@
+const randomizer = new Randomizer(document.querySelector('.form'));
