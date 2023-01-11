@@ -1,0 +1,10 @@
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.error-message {
+    color: red;
+}
