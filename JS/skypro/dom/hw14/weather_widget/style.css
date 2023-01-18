@@ -4,7 +4,8 @@ body {
 
 .widget {
     width: 493px;
-    height: 666px;
+    /* height: 666px; */
+    height: 65px;
     background: linear-gradient(152.19deg, rgba(207, 244, 246, 0.9) -0.04%, rgba(83, 91, 230, 0.9) 100%);
     border-radius: 30px;
     box-sizing: border-box;
@@ -23,12 +24,6 @@ body {
     height: 32px;
 }
 
-.widget__city {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-}
-
 .widget__weather-status {
     width: 180px;
     height: 180px;
@@ -44,7 +39,6 @@ body {
     align-items: center;
     text-align: center;
     gap: 10px;
-    padding-left: 15px;
 }
 
 .widget__temperature {
@@ -65,4 +59,66 @@ body {
 .widget__wind {
     color: #fff;
     margin: 0;
+}
+
+.widget__weather-status-hidden {
+    display: none;
+}
+
+.suggest {
+    width: 210px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    padding-left: 10px;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+.widget__button {
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    background: transparent;
+    color: #fff;
+}
+
+.suggest__suggest-popup {
+    position: absolute;
+    padding: 4px 2px;
+    border: 1px solid #fff;
+    background: #fff;
+    width: 210px;
+    height: 100px;
+    border-radius: 15px;
+    overflow-y: overlay;
+}
+
+.suggest__suggest-popup::-webkit-scrollbar {
+    width: 12px;
+}
+.suggest__suggest-popup::-webkit-scrollbar-track {
+    background: skyblue;
+    border-radius: 25px; 
+}
+.suggest__suggest-popup::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;    /* цвет плашки */
+    border-radius: 15px;       /* закругления плашки */
+    border: 2px solid blue;  
+}
+
+.suggest__suggest-popup_hidden {
+    display: none;
+}
+
+.suggest__suggest-popup-item {
+    cursor: pointer;
+    padding: 2px 2px;
+    margin: 0 -2px;
+}
+
+.suggest__suggest-popup-item:hover {
+    background-color: bisque;
 }
