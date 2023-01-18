@@ -1,0 +1,68 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.widget {
+    width: 493px;
+    height: 666px;
+    background: linear-gradient(152.19deg, rgba(207, 244, 246, 0.9) -0.04%, rgba(83, 91, 230, 0.9) 100%);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.widget__location {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.widget__location-img {
+    width: 32px;
+    height: 32px;
+}
+
+.widget__city {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.widget__weather-status {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 90px;
+}
+
+.widget__weather {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.widget__temperature {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.widget__weather-main, .widget__wind {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.widget__city, 
+.widget__temperature,
+.widget__weather-main,
+.widget__wind {
+    color: #fff;
+    margin: 0;
+}

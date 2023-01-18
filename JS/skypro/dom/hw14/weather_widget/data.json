@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 44.517,
+        "lat": 48.7071
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Snow",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 265.81,
+        "feels_like": 258.81,
+        "temp_min": 265.81,
+        "temp_max": 265.81,
+        "pressure": 1027,
+        "humidity": 79
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 6,
+        "deg": 120
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1673979565,
+    "sys": {
+        "type": 1,
+        "id": 8973,
+        "country": "RU",
+        "sunrise": 1673930901,
+        "sunset": 1673962495
+    },
+    "timezone": 10800,
+    "id": 472757,
+    "name": "Volgograd",
+    "cod": 200
+}
