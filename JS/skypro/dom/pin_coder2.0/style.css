@@ -54,6 +54,20 @@
 
 .pin-button_container {
     display: flex;
-    gap: 30px;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
     margin-top: 15px;
+}
+
+.submit-button, .reset-button {
+    width: 130px;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
 }

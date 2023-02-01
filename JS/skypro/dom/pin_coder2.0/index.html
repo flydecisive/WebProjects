@@ -12,21 +12,24 @@
 </head>
 
 <body>
-    <div class=" pin-enter_container">
-        <div id="demo"></div>
-        <div class="pin-button_container">
-            <button class="submit-button hidden">Отправить</button>
-            <button class="reset-button hidden">Сбросить пинкод</button>
+    <div class="container">
+        <div class=" pin-enter_container">
+            <div id="demo"></div>
+            <div class="pin-button_container">
+                <button class="submit-button hidden">Отправить</button>
+                <button class="reset-button hidden">Сбросить пинкод</button>
+            </div>
         </div>
+
+        <form action="" class="form">
+            <h2 class="header">Страница создания пинкода</h2>
+            <div class="input-container">
+                <input type="text" class="input" maxlength="12">
+                <p class="error-message hidden">Вводить можно только цифры</p>
+            </div>
+            <button class="save-button">Сохранить</button>
     </div>
 
-    <form action="" class="form">
-        <h2 class="header">Страница создания пинкода</h2>
-        <div class="input-container">
-            <input type="text" class="input" maxlength="12">
-            <p class="error-message hidden">Вводить можно только цифры</p>
-        </div>
-        <button class="save-button">Сохранить</button>
     </form>
     <script src="/node_modules/pincode-input/dist/pincode-input.min.js"></script>
     <script src="script.js"></script>
