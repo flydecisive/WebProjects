@@ -1,0 +1,10 @@
+.widget__text-hidden {
+    display: none;
+}
+
+.widget {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+    align-items: flex-start;
+}

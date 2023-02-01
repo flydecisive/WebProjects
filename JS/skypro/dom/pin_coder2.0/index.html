@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/pincode-input/dist/pincode-input.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notification-style.css" />
+</head>
+
+<body>
+    <div class=" pin-enter_container">
+        <div id="demo"></div>
+        <div class="pin-button_container">
+            <button class="submit-button hidden">Отправить</button>
+            <button class="reset-button hidden">Сбросить пинкод</button>
+        </div>
+    </div>
+
+    <form action="" class="form">
+        <h2 class="header">Страница создания пинкода</h2>
+        <div class="input-container">
+            <input type="text" class="input" maxlength="12">
+            <p class="error-message hidden">Вводить можно только цифры</p>
+        </div>
+        <button class="save-button">Сохранить</button>
+    </form>
+    <script src="/node_modules/pincode-input/dist/pincode-input.min.js"></script>
+    <script src="script.js"></script>
+    <script src="node_modules/vanilla-notify/src/vNotify.min.js"></script>
+    <script>
+        if (localStorage.getItem('pincode') !== null) {
+            form.classList.add('hidden');
+            submitButton.classList.remove('hidden');
+            resetButton.classList.remove('hidden');
+            const userPin = localStorage.getItem('pincode');
+            new PincodeInput('#demo', {
+                count: userPin.length,
+                secure: true,
+                previewDuration: 200,
+                onInput: (value) => {
+                    localStorage.setItem('enterPin', value);
+                }
+            });
+        } else {
+            pinEnterContainer.classList.add('hidden');
+        }
+    </script>
+</body>
+
+</html>
