@@ -30,11 +30,25 @@ document.addEventListener('DOMContentLoaded', function () {
         pinEnterContainer.classList.add('hidden');
     });
 
-    // const blocks = document.querySelectorAll('#demo>input');
-    // blocks[0].addEventListener('paste', (event) => {
-    //     blocks[0].value = 1;
-    // });
-
+    const blocks = document.querySelectorAll('#demo>input');
+    const blocksArr = [];
+    blocks[0].addEventListener('paste', (event) => {
+        const pastedData = handlePaste(event);
+        const data = pastedData.split('');
+        for (let i = 0; i < blocks.length; i++) {
+            for (let j = 0; j < data.length; j++) {
+                if (blocks[i] !== undefined) {
+                    blocks[i].value = data[i];
+                } else {
+                    continue;
+                }
+            }
+        }
+        blocks.forEach((block) => {
+            blocksArr.push(block.value);
+        });
+        localStorage.setItem('enterPin', blocksArr.join(''));
+    });
 });
 
 function onCheckInput() {
@@ -56,5 +70,12 @@ function takeValue(event) {
     console.log(event.target);
     localStorage.setItem('pincode', input.value);
     form.submit();
+}
+
+function handlePaste(event) {
+    event.preventDefault();
+    let clipboardData = event.clipboardData || window.clipboardData;
+    let pastedData = clipboardData.getData('Text');
+    return pastedData;
 }
 
