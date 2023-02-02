@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             vNotify.error({ text: 'Введен не верный пароль', title: 'Сожалеем' });
         }
     });
+
     resetButton.addEventListener('click', function () {
         delete localStorage.pincode;
         delete localStorage.enterPin;
@@ -28,6 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
         form.classList.remove('hidden');
         pinEnterContainer.classList.add('hidden');
     });
+
+    // const blocks = document.querySelectorAll('#demo>input');
+    // blocks[0].addEventListener('paste', (event) => {
+    //     blocks[0].value = 1;
+    // });
+
 });
 
 function onCheckInput() {
