@@ -13,11 +13,20 @@
         window.application = {
             blocks: {},
             screens: {},
-            renderScreen: function (screenName) { },
-            renderBlock: function (blockName, container) { },
-            timers: []
+            renderScreen: function (screenName) {
+                window.application.screens[screenName]();
+                window.application.timers.forEach(timer => {
+                    timer.clearInterval();
+                });
+                window.application.timers = [];
+            },
+            renderBlock: function (blockName, container) {
+                window.application.blocks[blockName](container);
+            },
+            timers: [],
         } // смотрите далее
     </script>
+    <script src="js/request.js"></script>
     <script src="js/script.js"></script>
     <!-- <script src="js/file2.js"></script> -->
 </body>
