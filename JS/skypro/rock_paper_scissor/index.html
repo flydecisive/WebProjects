@@ -10,21 +10,33 @@
 <body>
     <div class="app"></div> <!-- будут отрисовываться все страницы -->
     <script>
+
         window.application = {
             blocks: {},
             screens: {},
             renderScreen: function (screenName) {
-                window.application.screens[screenName]();
-                window.application.timers.forEach(timer => {
-                    timer.clearInterval();
-                });
-                window.application.timers = [];
+                if (window.application.currentScreen === null) {
+                    window.application.currentScreen = screenName;
+                    window.application.screens[screenName]();
+                } else if (screenName === window.application.currentScreen) {
+                    window.application.screens[screenName]();
+                } else {
+                    window.application.timers.forEach(timer => {
+                        clearInterval(timer);
+                    });
+                    window.application.timers = [];
+                    window.application.screens[screenName]();
+                    window.application.currentScreen = screenName;
+                }
             },
             renderBlock: function (blockName, container) {
                 window.application.blocks[blockName](container);
             },
             timers: [],
-        } // смотрите далее
+            token: undefined,
+            currentScreen: null,
+            gameId: null,
+        }
     </script>
     <script src="js/request.js"></script>
     <script src="js/script.js"></script>
