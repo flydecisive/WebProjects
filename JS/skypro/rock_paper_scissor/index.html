@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Камень, ножницы, бумага</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,6 +16,10 @@
             blocks: {},
             screens: {},
             renderScreen: function (screenName) {
+                if (!window.application.screens[screenName]) {
+                    throw new Error('Введенный блок не существует');
+                    return;
+                }
                 if (window.application.currentScreen === null) {
                     window.application.currentScreen = screenName;
                     window.application.screens[screenName]();
@@ -30,6 +35,10 @@
                 }
             },
             renderBlock: function (blockName, container) {
+                if (!window.application.blocks[blockName]) {
+                    throw new Error('Введенный блок не существует');
+                    return;
+                }
                 window.application.blocks[blockName](container);
             },
             timers: [],
@@ -40,7 +49,6 @@
     </script>
     <script src="js/request.js"></script>
     <script src="js/script.js"></script>
-    <!-- <script src="js/file2.js"></script> -->
 </body>
 
 </html>
