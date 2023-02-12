@@ -229,11 +229,6 @@ function renderMoveButtonsBlock(container) {
         onSuccess: (data) => {
             if (data['game-status']) {
                 enemy.textContent = `Вы против ${data['game-status'].enemy.login}`;
-            } else {
-                window.application.blocks['lobby-players'] = renderLobbyPlayers;
-                window.application.blocks['start-button'] = renderStartButton;
-                window.application.screens['lobby-screen'] = renderLobbyScreen;
-                window.application.renderScreen('lobby-screen');
             }
         }
     });
@@ -270,11 +265,6 @@ function renderMoveButtonsBlock(container) {
                         window.application.blocks['go-to-lobby'] = renderGoToLobbyBlock;
                         window.application.screens['lose-screen'] = renderLoseScreen;
                         window.application.renderScreen('lose-screen');
-                    } else if (data["game-status"].status === 'error') {
-                        window.application.blocks['lobby-players'] = renderLobbyPlayers;
-                        window.application.blocks['start-button'] = renderStartButton;
-                        window.application.screens['lobby-screen'] = renderLobbyScreen;
-                        window.application.renderScreen('lobby-screen');
                     }
                 }
             })
