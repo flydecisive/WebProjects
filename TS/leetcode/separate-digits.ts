@@ -9,5 +9,3 @@ function separateDigits(nums: number[]): number[] {
 
   return result;
 }
-
-console.log(separateDigits([123, 456]));
